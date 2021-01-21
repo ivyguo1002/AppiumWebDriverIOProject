@@ -1,0 +1,22 @@
+{
+  "name": "appiumwebdriverioproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx wdio wdio.conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^6.12.0",
+    "wdio-appium-service": "^0.2.3"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^6.12.0",
+    "@wdio/mocha-framework": "^6.11.0",
+    "@wdio/selenium-standalone-service": "^6.11.0",
+    "@wdio/spec-reporter": "^6.11.0",
+    "@wdio/sync": "^6.11.0"
+  }
+}
