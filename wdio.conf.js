@@ -1,4 +1,5 @@
 const { join } = require('path');
+
 exports.config = {
     //
     // ====================
@@ -18,7 +19,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './test/specs/**/*.js'
+        './test/specs/**/testcases-v2.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -240,8 +241,9 @@ exports.config = {
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
-    // beforeTest: function (test, context) {
-    // },
+    beforeTest: function (test, context) {
+        console.log("Test Starts");
+    },
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
      * beforeEach in Mocha)
